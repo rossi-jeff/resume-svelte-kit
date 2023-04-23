@@ -3,6 +3,7 @@
 	import type { Comment } from '../../types/comment.type';
 	import { graphQLClient } from '../../lib/grqphql-client';
 	import { GET_COMMENTS_QUERY } from '../../graphql/queries/get-comments';
+	import CommentCard from './comment-card.svelte';
 
 	let comments: Comment[] = [];
 
@@ -13,4 +14,6 @@
 	});
 </script>
 
-<div>{JSON.stringify(comments)}</div>
+{#each comments as comment (comment.Id)}
+	<CommentCard {comment} />
+{/each}

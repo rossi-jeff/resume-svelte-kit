@@ -3,6 +3,7 @@
 	import type { Link } from '../../types/link.type';
 	import { graphQLClient } from '$lib/grqphql-client';
 	import { GET_LINKS_QUERY } from '../../graphql/queries/get-links';
+	import LinkCard from './link-card.svelte';
 
 	let links: Link[] = [];
 
@@ -11,4 +12,6 @@
 	});
 </script>
 
-<div>{JSON.stringify(links)}</div>
+{#each links as link (link.Id)}
+	<LinkCard {link} />
+{/each}

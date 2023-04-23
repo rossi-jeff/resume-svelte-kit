@@ -3,6 +3,7 @@ import type { MonthYear } from './month-year.type';
 
 export type Job = {
 	Id?: string;
+	Company?: string;
 	Address?: Address;
 	Title?: string;
 	Duties?: string;
