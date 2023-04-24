@@ -24,6 +24,10 @@ export const FormatAddress = (address: Address) => {
 			formatted += ` ${address.City}`;
 		}
 
+		if (address.City && address.State) {
+			formatted += ', ';
+		}
+
 		if (address.State) {
 			formatted += ` ${address.State}`;
 		}

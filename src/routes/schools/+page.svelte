@@ -3,6 +3,7 @@
 	import type { School } from '../../types/school.type';
 	import { graphQLClient } from '$lib/grqphql-client';
 	import { GET_SCHOOLS_QUERY } from '../../graphql/queries/get-schools';
+	import SchoolCard from './school-card.svelte';
 
 	let schools: School[] = [];
 
@@ -11,4 +12,6 @@
 	});
 </script>
 
-<div>{JSON.stringify(schools)}</div>
+{#each schools as school (school.Id)}
+	<SchoolCard {school} />
+{/each}
