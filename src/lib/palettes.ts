@@ -10,23 +10,11 @@ export type PaletteType = {
 // taken from https://www.canva.com/colors/color-palettes/
 
 export const palettes: PaletteType = {
-	'Room-for-Comfort': {
-		one: '#E7D2CC',
-		two: '#B9B7BD',
-		three: '#868B8E',
-		four: '#EEEDE7'
-	},
 	'Summer-Splash': {
 		one: '#05445E',
 		two: '#189AB4',
 		three: '#75E6DA',
 		four: '#D4F1F4'
-	},
-	'Emerald-Entrance': {
-		one: '#B68D40',
-		two: '#F4EBD0',
-		three: '#122620',
-		four: '#D6AD60'
 	},
 	'Retro-Punch': {
 		one: '#2FF3E0',

@@ -17,7 +17,7 @@
 	};
 </script>
 
-<div class="mx-2 mb-4">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one">
 	<div class="mb-2">{comment.Message}</div>
 	{#if getAuthor(comment)}
 		<div class="text-right">

@@ -9,9 +9,9 @@
 	let showComment = false;
 </script>
 
-<div class="mx-2 mb-4">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one">
 	{#if reference.Name}
-		<h3>{FormatName(reference.Name)}</h3>
+		<h3 class="text-large font-bold">{FormatName(reference.Name)}</h3>
 	{/if}
 	{#if reference.Company}
 		<div>
@@ -64,7 +64,7 @@
 
 <style>
 	.visible {
-		display: block;
+		@apply block my-2;
 	}
 	.hidden {
 		display: none;

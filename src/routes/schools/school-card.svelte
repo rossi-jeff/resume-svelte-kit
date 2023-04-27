@@ -5,9 +5,9 @@
 	export let school: School = {};
 </script>
 
-<div class="mx-2 mb-4">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one">
 	{#if school.Name}
-		<h3>{school.Name}</h3>
+		<h3 class="text-large font-bold">{school.Name}</h3>
 	{/if}
 	{#if school.From && school.To}
 		<div class="flex flex-wrap">
