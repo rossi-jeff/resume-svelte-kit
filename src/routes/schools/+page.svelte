@@ -12,6 +12,8 @@
 	});
 </script>
 
+<h2 class="text-xl text-three font-bold mb-2">Schools</h2>
+
 {#each schools as school (school.Id)}
 	<SchoolCard {school} />
 {/each}

@@ -5,7 +5,7 @@
 	export let job: Job = {};
 </script>
 
-<div class="mx-2 mt-2 border-b border-dotted border-b-one">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one py-2">
 	<h3 class="text-large font-bold">{job.Company}</h3>
 	{#if job.From && job.To}
 		<div class="flex flex-wrap">

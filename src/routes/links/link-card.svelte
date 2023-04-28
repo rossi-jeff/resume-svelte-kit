@@ -4,7 +4,7 @@
 	export let link: Link = {};
 </script>
 
-<div class="mx-2 mb-4 px-2 border-b border-dotted border-b-one">
+<div class="mb-4 px-2 border-b border-dotted border-b-one">
 	<div class="flex flex-wrap">
 		<div class="w-36 text-left flex-grow">{link.Title}</div>
 		<div class="w-20 text-center">{link.Type}</div>
