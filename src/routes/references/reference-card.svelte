@@ -9,7 +9,7 @@
 	let showComment = false;
 </script>
 
-<div class="mx-2 mt-2 border-b border-dotted border-b-one">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one py-2">
 	{#if reference.Name}
 		<h3 class="text-large font-bold">{FormatName(reference.Name)}</h3>
 	{/if}

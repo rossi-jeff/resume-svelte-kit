@@ -14,6 +14,8 @@
 	});
 </script>
 
+<h2 class="text-xl text-three font-bold mb-2">References</h2>
+
 {#each references as reference (reference.Id)}
 	<ReferenceCard {reference} />
 {/each}

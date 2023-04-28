@@ -11,6 +11,7 @@
 		{ path: '/references', text: 'References' },
 		{ path: '/comments', text: 'Comments' },
 		{ path: '/contact', text: 'Contact' },
+		{ path: '/resume', text: 'Download Resume' },
 		{ path: '/links', text: 'Links' }
 	];
 	export let toggleMenu = () => {};

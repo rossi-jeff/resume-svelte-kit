@@ -17,10 +17,10 @@
 	};
 </script>
 
-<div class="mx-2 mt-2 border-b border-dotted border-b-one">
+<div class="mx-2 mt-2 border-b border-dotted border-b-one py-2">
 	<div class="mb-2">{comment.Message}</div>
 	{#if getAuthor(comment)}
-		<div class="text-right">
+		<div class="text-right text-three">
 			--&nbsp;
 			{getAuthor(comment)}
 		</div>

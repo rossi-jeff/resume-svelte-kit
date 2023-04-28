@@ -30,6 +30,11 @@
 		}
 	};
 
+	const bgClick = () => {
+		if (!visibleMenu) return;
+		toggleMenu();
+	};
+
 	onMount(() => {
 		const main = document.getElementById('main');
 		if (main) main.setAttribute('data-theme', palette);
@@ -41,7 +46,7 @@
 
 	<div class="flex flex-col h-screen">
 		<TitleBar {toggleMenu} />
-		<div class="flex-grow overflow-y-auto h-full p-2">
+		<div class="flex-grow overflow-y-auto h-full p-2" on:click={bgClick} on:keypress={bgClick}>
 			<slot />
 		</div>
 		<FooterBar {changePalette} />

@@ -8,8 +8,9 @@
 		<Bars3 on:click={toggleMenu} />
 	</div>
 	<div class="flex-grow">
-		<span class="text-xl font-bold">Jeff Rossi</span>
-		<span class="text-lg"> | Software Developer</span>
+		<span class="text-xl font-bold text-four">Jeff Rossi</span>
+		&nbsp;|&nbsp;
+		<span class="text-lg text-one">Software Developer</span>
 	</div>
 	<div style="max-w-fit ml-2">
 		<a href="mailto:inquiries@jeff-rossi.com">inquiries@jeff-rossi.com</a>

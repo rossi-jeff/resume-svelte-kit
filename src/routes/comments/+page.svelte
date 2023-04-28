@@ -14,6 +14,8 @@
 	});
 </script>
 
+<h2 class="text-xl text-three font-bold mb-2">Comments</h2>
+
 {#each comments as comment (comment.Id)}
 	<CommentCard {comment} />
 {/each}
