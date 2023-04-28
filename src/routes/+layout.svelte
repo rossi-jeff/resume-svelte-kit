@@ -41,6 +41,14 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Software Developer</title>
+	<meta
+		name="description"
+		content="Jeff Rossi has been a software developer since 1998. He is familiar with PHP, MySQL, Ruby on Rails, JavaScript, TypeScript, NodeJS, and GraphQL. He has a Bachelor of Science degree in Information Technology."
+	/>
+</svelte:head>
+
 <main id="main" class="bg-four m-0 p-0 text-one">
 	<NavPanel {toggleMenu} />
 

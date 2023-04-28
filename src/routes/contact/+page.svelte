@@ -54,6 +54,10 @@
 	};
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Contact Me</title>
+</svelte:head>
+
 <h2 class="text-xl text-three font-bold mb-2">Contact Me</h2>
 
 {#if formSent}

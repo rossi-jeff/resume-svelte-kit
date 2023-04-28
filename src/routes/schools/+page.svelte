@@ -12,6 +12,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Schools</title>
+</svelte:head>
+
 <h2 class="text-xl text-three font-bold mb-2">Schools</h2>
 
 {#each schools as school (school.Id)}

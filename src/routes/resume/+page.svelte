@@ -41,6 +41,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Resume</title>
+</svelte:head>
+
 <button on:click={print} class="bg-three text-two border border-two rounded px-2 py-1 mb-2 ml-2">
 	<Printer class="inline-block" />
 	Print
