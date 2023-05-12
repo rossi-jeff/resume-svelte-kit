@@ -17,7 +17,7 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss" scoped>
 	a:hover {
 		@apply font-bold underline;
 	}

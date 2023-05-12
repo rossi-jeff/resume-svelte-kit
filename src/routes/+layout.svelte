@@ -56,6 +56,7 @@
 		<TitleBar {toggleMenu} />
 		<div class="flex-grow overflow-y-auto h-full p-2" on:click={bgClick} on:keypress={bgClick}>
 			<slot />
+			<div id="spacer" class="h-10" />
 		</div>
 		<FooterBar {changePalette} />
 	</div>
