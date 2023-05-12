@@ -45,13 +45,19 @@
 	<title>Jeff Rossi | Resume</title>
 </svelte:head>
 
-<button on:click={print} class="bg-three text-two border border-two rounded px-2 py-1 mb-2 ml-2">
-	<Printer class="inline-block" />
-	Print
-</button>
+<div class="flex flex-wrap mx-2">
+	<div class="mr-2">
+		<button on:click={print} class="bg-three text-two border border-two rounded px-2 py-1 mb-2">
+			<Printer class="inline-block" />
+			Print
+		</button>
+	</div>
+	<div>From the print menu choose "Save as PDF" if you wish to download</div>
+</div>
 
 <div class="border border-black rounded p-4 bg-white text-black mx-2 my-2" id="print-container">
-	<div class="font-bold text-lg">Jeff Rossi</div>
+	<br />
+	<h2 class="font-bold text-lg">Jeff Rossi</h2>
 	<div>SoftWare Developer</div>
 	<hr class="border-2 border-black mb-4" />
 
@@ -59,8 +65,10 @@
 	<hr class="border-2 border-black mb-4" />
 
 	{#each jobs as job}
-		<div class="mb-6">
-			<div class="font-bold">{job.Company}</div>
+		<div>
+			<div>
+				<strong>{job.Company}</strong>
+			</div>
 			{#if job.From && job.To}
 				<div class="flex flex-wrap">
 					<div class="mr-4">
@@ -94,14 +102,17 @@
 				</div>
 			{/if}
 		</div>
+		<br />
 	{/each}
 
 	<div class="font-bold mt-4">Education</div>
 	<hr class="border-2 border-black mb-4" />
 
 	{#each schools as school}
-		<div class="mb-6">
-			<div class="font-bold">{school.Name}</div>
+		<div>
+			<div>
+				<strong>{school.Name}</strong>
+			</div>
 			{#if school.From && school.To}
 				<div class="flex flex-wrap">
 					<div class="mr-4">
@@ -135,15 +146,18 @@
 				</div>
 			{/if}
 		</div>
+		<br />
 	{/each}
 
 	<div class="font-bold mt-4">References</div>
 	<hr class="border-2 border-black mb-4" />
 
 	{#each references as reference}
-		<div class="mb-6">
+		<div>
 			{#if reference.Name}
-				<div class="font-bold">{FormatName(reference.Name)}</div>
+				<div>
+					<strong>{FormatName(reference.Name)}</strong>
+				</div>
 			{/if}
 			{#if reference.Company}
 				<div>
@@ -170,6 +184,7 @@
 				</div>
 			{/if}
 		</div>
+		<br />
 	{/each}
 
 	<div class="font-bold mt-4">Online</div>

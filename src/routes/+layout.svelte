@@ -49,7 +49,7 @@
 	/>
 </svelte:head>
 
-<main id="main" class="bg-four m-0 p-0 text-one">
+<main id="main" class="bg-four m-0 p-0 text-one" data-theme="Mountain-Haze">
 	<NavPanel {toggleMenu} />
 
 	<div class="flex flex-col h-screen">

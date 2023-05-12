@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Jeff Rossi | Software Developer</title>
+</svelte:head>
+
 <div>
 	<h2 class="text-xl text-three font-bold mb-2">About Myself</h2>
 
