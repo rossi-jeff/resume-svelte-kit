@@ -7,11 +7,11 @@
 	export let changePalette = (ev: any) => {};
 </script>
 
-<div class="bg-two text-three mx-2 mb-2 p-2 rounded flex flex-wrap">
+<div class="bg-two text-three mx-2 mb-2 p-2 rounded md:flex md:flex-wrap">
 	<div style="max-w-fit mr-2">
 		<a href="mailto:inquiries@jeff-rossi.com">inquiries@jeff-rossi.com</a>
 	</div>
-	<div class="flex-grow text-center">1506 Tuscaloosa Ave, Holly Hill, FL 32117</div>
+	<div class="md:flex-grow md:text-center">1506 Tuscaloosa Ave, Holly Hill, FL 32117</div>
 	<div class="max-w-fit ml-2">
 		<label for="theme" class="font-bold mr-2">Theme</label>
 		<select name="theme" value={palette} class="bg-two text-three" on:change={changePalette}>

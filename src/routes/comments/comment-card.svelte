@@ -20,7 +20,7 @@
 <div class="mx-2 mt-2 border-b border-dotted border-b-one py-2">
 	<div class="mb-2">{comment.Message}</div>
 	{#if getAuthor(comment)}
-		<div class="text-right text-three">
+		<div class="text-right text-three font-bold">
 			--&nbsp;
 			{getAuthor(comment)}
 		</div>

@@ -42,3 +42,12 @@
 		</div>
 	{/if}
 </div>
+
+<style lang="postcss" scoped>
+	strong {
+		@apply text-three;
+	}
+	h3 {
+		@apply text-xl text-two font-bold;
+	}
+</style>

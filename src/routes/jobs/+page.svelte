@@ -12,6 +12,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Jobs</title>
+</svelte:head>
+
 <h2 class="text-xl text-three font-bold mb-2">Jobs</h2>
 
 {#each jobs as job (job.Id)}

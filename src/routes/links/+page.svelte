@@ -12,6 +12,10 @@
 	});
 </script>
 
+<svelte:head>
+	<title>Jeff Rossi | Links</title>
+</svelte:head>
+
 <h2 class="text-xl text-three font-bold mb-2">Links</h2>
 
 <div class="my-4">

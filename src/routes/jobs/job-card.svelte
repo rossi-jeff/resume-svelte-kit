@@ -6,7 +6,7 @@
 </script>
 
 <div class="mx-2 mt-2 border-b border-dotted border-b-one py-2">
-	<h3 class="text-large font-bold">{job.Company}</h3>
+	<h3>{job.Company}</h3>
 	{#if job.From && job.To}
 		<div class="flex flex-wrap">
 			<div class="mr-4">
@@ -40,3 +40,12 @@
 		</div>
 	{/if}
 </div>
+
+<style lang="postcss" scoped>
+	strong {
+		@apply text-three;
+	}
+	h3 {
+		@apply text-xl text-two font-bold;
+	}
+</style>

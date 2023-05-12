@@ -10,6 +10,12 @@ export type PaletteType = {
 // taken from https://www.canva.com/colors/color-palettes/
 
 export const palettes: PaletteType = {
+	'Mountain-Haze': {
+		one: '#C3CEDA',
+		two: '#738FA7',
+		three: '#0C4160',
+		four: '#071330'
+	},
 	'Summer-Splash': {
 		one: '#05445E',
 		two: '#189AB4',
@@ -45,12 +51,6 @@ export const palettes: PaletteType = {
 		two: '#FF9636',
 		three: '#FFCD58',
 		four: '#DAD870'
-	},
-	'Mountain-Haze': {
-		one: '#C3CEDA',
-		two: '#738FA7',
-		three: '#0C4160',
-		four: '#071330'
 	},
 	'Gingerbread-Ice-Cream': {
 		one: '#6F5B3E',
